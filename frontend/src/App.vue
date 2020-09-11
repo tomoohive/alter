@@ -6,7 +6,7 @@
       color="#f2eace"
     >
       <div class="d-flex align-center">
-        <h2>すうじ⇄かんすうじ。</h2>
+        <b style="font-size: 20px">すうじ⇄かんすうじ。</b>
       </div>
 
       <v-spacer></v-spacer>
@@ -21,7 +21,7 @@
       </v-btn>
     </v-app-bar>
 
-    <v-main>
+    <v-main style="height: 100vh">
       <Conversion/>
     </v-main>
   </v-app>

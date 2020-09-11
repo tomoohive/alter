@@ -50,15 +50,16 @@ export default {
 .centering_parent {
     padding: 20px;              /* 余白指定 */
     height: 100%;              /* 高さ指定 */
+    position: relative;
 }
 
 .centering_item {
+   position: absolute;          /* 位置指定 */
+   top: 50%;                    /* 親要素の半分下にずらす */
+   left: 50%;                   /* 親要素の半分右にずらす */
+   transform: translateY(-50%) translateX(-50%);    /* 要素自体の半分、上と左にずらす */
    padding: 20px;               /* 余白指定 */
-   top:  0;                     /* 位置指定 */
-   bottom: 0;                  /* 位置指定 */
-   left:  0;                    /* 位置指定 */
-   right:  0;                   /* 位置指定 */
-   margin: 30% auto;               /* 中央寄せ */
+   width: 85%;
 }
 
 .cream {
